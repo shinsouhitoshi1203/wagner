@@ -11,17 +11,18 @@ export default defineConfig({
 
 	build: {
 		lib: {
-			fileName: "comment-component",
-			name: "comment-component",
-			entry: resolve(__dirname, "entry.js")
+			entry: resolve(__dirname, "entry.js"),
+			name: "CommentComponent",
+			fileName: (format) =>
+				`comment-component.${format === "es" ? "js" : "umd.cjs"}`,
+			formats: ["es", "umd"]
 		},
 		rollupOptions: {
 			external: ["react", "react-dom"],
-
 			output: {
 				globals: {
 					react: "React",
-					"react-dom": "React-dom"
+					"react-dom": "ReactDOM"
 				}
 			}
 		}
