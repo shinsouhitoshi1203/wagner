@@ -13,9 +13,10 @@ export default defineConfig({
 		lib: {
 			entry: resolve(__dirname, "entry.js"),
 			name: "CommentComponent",
-			fileName: (format) =>
-				`comment-component.${format === "es" ? "js" : "umd.cjs"}`,
-			formats: ["es", "umd"]
+			fileName: "comment-component"
+			// fileName: (format) =>
+			// 	`comment-component.${format === "es" ? "js" : "umd.cjs"}`,
+			// formats: ["es", "umd"]
 		},
 		rollupOptions: {
 			external: ["react", "react-dom"],
