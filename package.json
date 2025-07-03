@@ -6,9 +6,9 @@
 		"packages/*",
 		"websites/*"
 	],
-	"dependencies": {
-		"global": "^4.4.0",
+	"dependencies": {},
+	"packageManager": "yarn@1.22.22",
+	"devDependencies": {
 		"turbo": "^2.5.4"
-	},
-	"packageManager": "yarn@1.22.22"
+	}
 }
