@@ -5,5 +5,10 @@
 	"workspaces": [
 		"packages/*",
 		"websites/*"
-	]
+	],
+	"dependencies": {
+		"global": "^4.4.0",
+		"turbo": "^2.5.4"
+	},
+	"packageManager": "yarn@1.22.22"
 }
