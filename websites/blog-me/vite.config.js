@@ -6,7 +6,6 @@ export default defineConfig({
 	plugins: [react()],
 
 	server: {
-		host: "blog-me.wagner.local",
-		port: 80
+		port: 8088
 	}
 });
